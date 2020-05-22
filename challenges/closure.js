@@ -26,8 +26,8 @@ myFunction();
 // For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 function sumation(x) {
   let counter = 0;
-  for(i=0; i <= x; i++) {
-    counter = counter + i; 
+  for (i = 0; i <= x; i++) {
+    counter = counter + i;
   }
   return counter;
 }

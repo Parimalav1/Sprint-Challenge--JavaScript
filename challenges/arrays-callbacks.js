@@ -23,7 +23,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-zooAnimals.forEach(function(item, index){
+zooAnimals.forEach(function (item, index) {
   displayNames.push(`Name: ${item.animal_name}, Scientific: ${item.scientific_name}.`)
 });
 console.log(displayNames);
@@ -35,7 +35,7 @@ Using map, create a new array of strings named lowCaseAnimalNames, each string f
 
 */
 
-const lowCaseAnimalNames = zooAnimals.map(function(item) {
+const lowCaseAnimalNames = zooAnimals.map(function (item) {
   return item.animal_name.toLowerCase();
 });
 console.log(lowCaseAnimalNames);
@@ -46,7 +46,7 @@ The zoos are concerned about animals with a lower population count.
 Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = zooAnimals.filter(function(item) {
+const lowPopulationAnimals = zooAnimals.filter(function (item) {
   return item.population < 5;
 });
 console.log(lowPopulationAnimals);
@@ -58,7 +58,7 @@ Find the total population from all the zoos using the .reduce() method.
 Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = zooAnimals.reduce((acc,item) => acc + item.population, 0);
+const populationTotal = zooAnimals.reduce((acc, item) => acc + item.population, 0);
 console.log(populationTotal);
 
 
@@ -70,7 +70,7 @@ console.log(populationTotal);
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
-const consume = function(a, b, cb) {
+const consume = function (a, b, cb) {
   return cb(a, b);
 }
 
@@ -79,13 +79,13 @@ const consume = function(a, b, cb) {
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
-const add = function(a, b) {
+const add = function (a, b) {
   return a + b;
 }
-const multiply = function(a, b) {
+const multiply = function (a, b) {
   return a * b;
 }
-const greeting = function(firstName, lastName) {
+const greeting = function (firstName, lastName) {
   return `Hello ${firstName} ${lastName}, nice to meet you!`
 }
 
