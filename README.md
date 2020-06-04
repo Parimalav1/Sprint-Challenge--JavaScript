@@ -25,14 +25,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+Array method .forEach loops thru each item and there is no return for the method. It has to be called or invoked.
+Array method .map applies to the array and there is a return value.
 
 2. Explain the difference between a callback and a higher order function.
+Callback is a function that is passed as an argument to a function. Higher order function takes function as an argument when it is called.
 
 3. What is closure?
+Closure is programming consrtuct used to put functions together, to access parent scope, code anywhere and is written using curly brackets.
 
 4. Describe the four rules of the 'this' keyword.
+Window binding: takes '.this' keyword and it undefined(error).
+
+Implicit binding: is commonly used and when the function is invoked, it looks at the function left to the dot.
+
+Explicit binding:'.call' takes one argument and invokes the function immediately. '.apply' takes an array as inputs and invokes the function immediately. '.bind' doesn't invoke the function immediately, creates a new function and then invokes it.
+
+New binding: uses new keyword to create a constructor and this keyword points to its attributes.
 
 5. Why do we need super() in an extended class?
+Super is needed in an extended class to initialize parent class.
 
 ### Task 1 - Project Set up
 
